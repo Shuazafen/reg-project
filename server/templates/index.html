@@ -1,0 +1,86 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCCG-YFC.com</title>
+    <link rel="stylesheet" href="{% static "./style.css"%}">
+</head>
+<body>
+     <section class="container">
+        
+        <header>
+            <!-- <img src="./images/images.png" alt=""> -->
+            <h3>Registration Form</h3>
+        </header>
+         {% csrf_token %}
+        <form action="#" class="form">
+            <div class="input-box">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter full name" id="name" required>
+            </div>
+
+
+
+            <div class="column">
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" placeholder="Phone number" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="Birth">Birth Date</label>
+                    <input type="date" placeholder="Enter birth date" required>
+                </div>
+            </div>
+
+            
+            <div class="input-box">
+                <label for="member">Are You A Member Of RCCG</label>
+                <input type="text" placeholder="Yes/No" required>
+            </div>
+                    
+                    
+                    
+                
+
+            <div class="input-box">
+                <label for="member">Are You A Member Of YFC</label>
+                <input type="text" placeholder="Yes/No" required>
+            </div>
+
+                <div class="input-box">
+                    <label for="">WhatsApp Number</label>
+                    <input type="number" placeholder="WhatsApp phone number">
+                </div>
+            
+
+            
+                <div class="input-box">
+                    <label for="">How did you hear about the program(if through a friend provide a name)</label>
+                    <input type="text" value="" placeholder="">
+                </div>
+
+                
+                
+                    
+                    <div class="input-box">
+                        <label for="attended">Have You Attended YFC Before</label>
+                        <input type="text" placeholder="Yes/No" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">Do You have any suggestions to make YFC better</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                
+                    
+                    <button type="submit" id="submitButton">Submit</button>
+            
+        </form>
+     </section>
+     
+</body>
+</html>
