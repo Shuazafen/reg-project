@@ -59,6 +59,10 @@ body{
     padding: 0 15px;
 }
 
+textarea{
+    padding: 20px 12px;
+}
+
 .form .column{
     display: flex;
     column-gap: 15px;
